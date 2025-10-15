@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-09/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/gallery.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gallery</title>
     <script type="module" crossorigin src="/goit-js-hw-09/assets/styles-CZmJPVr8.js"></script>
     <script type="module" crossorigin src="/goit-js-hw-09/assets/vendor-CgTBfC_f.js"></script>
     <script type="module" crossorigin src="/goit-js-hw-09/assets/1-gallery-VGi9-amS.js"></script>
@@ -14,29 +20,18 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <a class="nav-logo" href="./index.html" aria-label="Site logo">
-            <svg class="nav-logo-icon" width="100" height="30">
-              <use href="{=$icon-path}"></use>
-            </svg>
-          </a>
+        <nav>
           <ul class="nav-list">
-            <li>
-              <a class="nav-link {=$highlight-act}" href="./1-gallery.html"
-                >Gallery</a
-              >
-            </li>
-            <li>
-              <a class="nav-link {=$highlight-curr}" href="./2-form.html"
-                >Form</a
-              >
-            </li>
+            <li><a href="./index.html">Go back</a></li>
+            <li><a href="./2-form.html">Go to form</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
     <main>
-      <!-- Loads the specified .html file -->
+      <ul class="gallery"></ul>
     </main>
+
   </body>
 </html>
